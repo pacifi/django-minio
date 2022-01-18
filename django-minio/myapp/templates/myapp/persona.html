@@ -1,0 +1,14 @@
+<table cl>
+    <tr>
+        <th>Nombre</th>
+        <th>Foto</th>
+        <th>Doc</th>
+    </tr>
+    {% for object in object_list %}
+        <tr>
+            <td>{{ object.nombre }}</td>
+        <td><img width="300" src="{{ object.foto.url }}" alt="">{{ object.foto.url }}</td>
+        </tr>
+    {% endfor %}
+
+</table>
