@@ -1,0 +1,22 @@
+ServerBackend
+
+# apt update 
+# apt install python3-dev
+# apt install libpq-dev
+# apt install python3-venv
+# cd /opt
+# python3 -m venv webapp
+# cd webapp/ 
+# git clone https://github.com/pacifi/django-minio.git proyecto
+# source bin/activate
+# cd django-minio
+# cd django-minio
+# pip install gunicorn
+# copiar gunicorn_start /opt/webapp/bin
+# chmod +x gunicorn_start
+
+# apt install supervisor
+# copiar webapp.conf /etc/supervisor/conf.d/
+# supervisorctl update
+# supervisorctl reread
+# supervisorctl restart all
