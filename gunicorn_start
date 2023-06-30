@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME="portal"
-DJANGODIR=/opt/webapp/django-minio/django-minio
-SOCKFILE=/var/www/webapp/run/gunicorn.sock
+DJANGODIR=/opt/webapp/proyecto/django-minio/django-minio
+# SOCKFILE=/var/www/webapp/run/gunicorn.sock
 USER=root
 GROUP=root
 NUM_WORKERS=3
@@ -27,6 +27,6 @@ exec ../../bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --name $NAME \
   --workers $NUM_WORKERS \
   --user=$USER --group=$GROUP \
-  --bind=unix:$SOCKFILE \
+  --bind=0.0.0.0:8000 \
   --log-level=debug \
   --log-file=-
