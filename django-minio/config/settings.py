@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-bttm_jo1tf5cth+9x189r*(u^@a(6@jbj!&q#*g2%b&6o@#@ot
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -132,7 +132,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 AWS_STORAGE_BUCKET_NAME = "django"
-AWS_ACCESS_KEY_ID = "minio"
-AWS_SECRET_ACCESS_KEY = "minio123"
+AWS_ACCESS_KEY_ID = "ROOTNAME"
+AWS_SECRET_ACCESS_KEY = "CHANGEME123"
 # AWS_S3_CUSTOM_DOMAIN = 'minio.upeu.pe'
-AWS_S3_ENDPOINT_URL = "http://minio.upeu.pe"
+AWS_S3_ENDPOINT_URL = "http://192.168.1.200:9000"
