@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME="portal"
-DJANGODIR=/opt/webapp/proyecto/django-minio/django-minio
+DJANGODIR=/opt/webapp/proyecto/django-minio
 # SOCKFILE=/var/www/webapp/run/gunicorn.sock
 USER=root
 GROUP=root
